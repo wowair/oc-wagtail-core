@@ -94,9 +94,9 @@ class Navigation(models.Model):
                 ('link_external', blocks.StructBlock([
                         ('caption', blocks.CharBlock()),
                         ('url', blocks.CharBlock()),
+                        ('mega_menu', blocks.BooleanBlock(label="Show_in_mega_menu", default=False, blank=True, required=False)),
                     ])),
                 ('link_page', blocks.PageChooserBlock()),
-                ('mega_menu', blocks.BooleanBlock(label="Show_in_mega_menu", default=False, blank=True, required=False)),
             ])))])),
     ], blank=True)
 
